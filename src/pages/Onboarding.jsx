@@ -165,7 +165,7 @@ export default function Onboarding() {
         <button
           onClick={handleSubmit}
           style={{ backgroundColor: "#3643fb" }}
-          className="w-full py-3 text-white rounded-md cursor-pointer font-medium mt-20"
+          className="w-full py-3 text-white rounded-md cursor-pointer font-medium mt-10 sm:mt-20"
         >
           Continue
         </button>
