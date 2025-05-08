@@ -91,7 +91,7 @@ export default function Dashboard() {
                             </div>
                         </div>
                     </div>
-                    <div className='flex justify-between items-center px-5 mt-8'>
+                    <div className='flex justify-between items-center mt-8'>
 
                      <FlightCard
                       date="26.01.2025"
@@ -114,7 +114,7 @@ export default function Dashboard() {
                     <div className="mt-5 overflow-x-auto">
                         <div className="flex gap-4 min-w-max sm:min-w-0">
                             <AccommodationCard 
-                            name="Shinagawa Prince Hotel"
+                            name="Shinagawa Hotel"
                             image={accommodation}
                             checkIn="26.01.2025, 11:15 pm"
                             checkOut="28.01.2025, 11:15 am"
@@ -134,7 +134,7 @@ export default function Dashboard() {
                             />
 
                             <AccommodationCard 
-                            name="Shinagawa Prince Hotel"
+                            name="Shinagawa Hotel"
                             image={accommodation}
                             checkIn="26.01.2025, 11:15 pm"
                             checkOut="28.01.2025, 11:15 am"
@@ -144,7 +144,7 @@ export default function Dashboard() {
                             />
 
                             <AccommodationCard 
-                            name="Shinagawa Prince Hotel"
+                            name="Shinagawa Hotel"
                             image={accommodation}
                             checkIn="26.01.2025, 11:15 pm"
                             checkOut="28.01.2025, 11:15 am"
@@ -163,7 +163,7 @@ export default function Dashboard() {
 
                     {/* //bcdcsdv */}
 
-                    <div className='flex justify-center w-full h-full items-center px-5 mt-5'>
+                    <div className='flex justify-center items-center px-5 mt-5'>
                         <CalendarCard activitiesCount={14} />
                     </div>
 
