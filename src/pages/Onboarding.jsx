@@ -28,8 +28,8 @@ export default function Onboarding() {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen md:bg-base-300  bg-base-100 text-base">
-      <div className="w-full max-w-2xl px-4 py-6 md:px-6 md:py-8 bg-base-100 rounded-lg">
+    <div className="flex h-full justify-center items-center min-h-screen md:bg-base-300 bg-base-100 text-base">
+      <div className="w-full h-full max-w-2xl px-4 py-6 md:px-6 md:py-2 bg-base-100 rounded-lg">
         {/* Header */}
         <h1 className="text-2xl font-bold mb-1">Plan Your Journey, Your Way!</h1>
         <p className="text-sm text-base-400 mb-6">Let's create your personalised travel experience</p>
