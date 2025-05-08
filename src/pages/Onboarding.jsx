@@ -34,7 +34,7 @@ export default function Onboarding() {
   };
 
   return (
-    <div className="flex h-full justify-center items-center min-h-screen md:bg-base-300 bg-base-100 text-base">
+    <div className="flex h-full justify-center items-center min-h-screen bg-base-100 text-base">
       <div className="w-full h-full max-w-2xl px-4 py-6 md:px-6 md:py-2 bg-base-100 rounded-lg">
         <div className="flex justify-end">
           <button
