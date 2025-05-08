@@ -4,7 +4,7 @@ export const useAuthStore = create((set) => ({
     destination: null,
     duration: null,
     travelType: null,
-    name: 'Anirudhhan',
+    user: 'Anirudhhan',
 
     fillDetails: (data) => {
         set({ destination: data.destination });
