@@ -5,6 +5,9 @@ export const useAuthStore = create((set) => ({
     duration: null,
     travelType: null,
     user: 'Anirudhhan',
+    darkmode: false,
+
+    setDarkMode: (darkmode) => set({ darkmode }),
 
     fillDetails: (data) => {
         set({ destination: data.destination });
