@@ -1,6 +1,6 @@
 import React from 'react';
 import { useAuthStore } from '../store/useAuthStore';
-import { BookMarked, Clock, Footprints, MoveUpRight, Users } from 'lucide-react';
+import { BookMarked, Clock, Footprints, MoveUpRight, Users, Moon, Sun } from 'lucide-react';
 import tokyoImg from '../assets/tokyo.png';
 import accommodation from '../assets/accommodation1.png';
 import accommodation2 from '../assets/accommodation2.png';
@@ -14,10 +14,22 @@ import FlightCard from '../components/FlightCard';
 
 export default function Dashboard() {
     const { user } = useAuthStore();
+    const { setDarkMode, darkmode } = useAuthStore();
+
+    const changeDarkMode = () => {
+        setDarkMode(!darkmode);
+    };
+    
 
     return (
-        <div className='w-full h-full flex justify-center min-h-screen bg-base sm:bg-gray-200 p-2'>
-            <div className="w-full h-full max- px-6 py-8 md:px-10 md:py-8 bg-base-100 rounded-lg bg-base-300">
+        <div className='w-full h-full flex justify-center min-h-screen bg-base sm:bg-base-300 p-2'>
+            <div className="w-full h-full max- px-6 py-8 md:px-10 md:py-8 bg-base-300 rounded-lg ">
+            <div className='flex justify-end'>
+                <button onClick={changeDarkMode} className="p-2 rounded-full bg-base-300 flex">
+                    <p className='mr-2'>DarkMode</p>
+                    {darkmode ? <Sun size={20} className="text-yellow-400" /> : <Moon size={20} className="text-gray-800" />}
+                </button>
+            </div>
                 <div className="flex items-center justify-between h-full w-full">
                     <div>
                         <h1 className='font-bold text-2xl'>Hello, {user}</h1>
